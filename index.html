@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <h1>Tic-Tac-Toe</h1>
+    <p>Click on the board to place a "O" or an "X". Player 1 goes first, with "O". Player 2 uses "X".</p>
+    <p>Get 3 in a row diagonally, horizontally or vertically!</p>
+    
+    <h2 id="game-status"></h2>
+    
+       <div class="game-board">
+       
+        <div class="row">
+            <div id="0_0" onclick="place(this)"></div>
+            <div id="1_0" onclick="place(this)"></div>
+            <div id="2_0" onclick="place(this)"></div>
+        </div>
+        <div class="row">
+            <div id="0_1" onclick="place(this)"></div>
+            <div id="1_1" onclick="place(this)"></div>
+            <div id="2_1" onclick="place(this)"></div>
+        </div>
+        <div class="row">
+            <div id="0_2" onclick="place(this)"></div>
+            <div id="1_2" onclick="place(this)"></div>
+            <div id="2_2" onclick="place(this)"></div>
+        </div>
+        
+    </div>
+    
+    <div>
+        <h3 id="winner-msg"></h3>
+        <img src="svg/002-trophy.svg" alt="A gold trophy cup" />
+    </div>
+    
+    <button type="button" id="reset" onclick="resetGame()">Reset</button>
+    
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
